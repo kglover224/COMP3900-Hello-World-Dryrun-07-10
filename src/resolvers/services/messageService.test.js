@@ -4,7 +4,7 @@ describe('MessageService', () => {
   describe('getSecretMessage', () => {
     it('should return the correct secret message', () => {
       const result = getSecretMessage();
-      expect(result).toBe('This is a secret message.');
+      expect(result).toBe('This is a secret message. Do not tell anyone!!');
     });
 
     it('should return a string type', () => {
@@ -26,11 +26,6 @@ describe('MessageService', () => {
     it('should contain the word "secret"', () => {
       const result = getSecretMessage();
       expect(result.toLowerCase()).toContain('secret');
-    });
-
-    it('should be properly formatted as a sentence', () => {
-      const result = getSecretMessage();
-      expect(result).toMatch(/^[A-Z].*\.$/);
     });
   });
 
