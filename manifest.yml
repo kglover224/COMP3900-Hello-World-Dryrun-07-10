@@ -1,0 +1,21 @@
+modules:
+  jira:issuePanel:
+    - key: comp3900-hello-world-dryrun-hello-world-issue-panel
+      resource: main
+      resolver:
+        function: resolver
+      render: native
+      title: COMP3900 Hello World Dryrun (By Kit)
+      icon: https://developer.atlassian.com/platform/forge/images/icons/issue-panel-icon.svg
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: src/frontend/index.jsx
+app:
+  runtime:
+    name: nodejs22.x
+    memoryMB: 256
+    architecture: arm64
+  id: ari:cloud:ecosystem::app/e7821101-19fd-48a3-be8a-a38011da667b
