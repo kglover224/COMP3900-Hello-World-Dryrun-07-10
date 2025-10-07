@@ -51,8 +51,6 @@ describe('Resolver Integration Tests', () => {
             accountId: '5d123456789012345678901a'
           },
           siteUrl: 'https://test-site.atlassian.net',
-          cloudId: 'test-cloud-id',
-          localId: 'test-local-id'
         },
         payload: {
           issueKey: 'DEMO-123',
