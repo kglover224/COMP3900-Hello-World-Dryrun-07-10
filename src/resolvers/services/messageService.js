@@ -8,7 +8,7 @@
  * @returns {string} The secret message
  */
 export const getSecretMessage = () => {
-  return 'This is a secret message. Do not tell anyone!!';
+  return 'This is my cool message';
 };
 
 /**
