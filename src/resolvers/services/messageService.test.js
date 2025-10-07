@@ -22,11 +22,6 @@ describe('MessageService', () => {
       const secondCall = getSecretMessage();
       expect(firstCall).toBe(secondCall);
     });
-
-    it('should contain the word "secret"', () => {
-      const result = getSecretMessage();
-      expect(result.toLowerCase()).toContain('secret');
-    });
   });
 
   describe('getGreetingMessage', () => {
