@@ -2,8 +2,8 @@ name: Test Forge App
 
 on:
   push:
-    branches:
-      - '**' # This matches all branches
+    branches-ignore:
+      - main  # Workflow will NOT run on pushes to 'main'
   workflow_dispatch:  # Allow manual trigger
 
 jobs:
