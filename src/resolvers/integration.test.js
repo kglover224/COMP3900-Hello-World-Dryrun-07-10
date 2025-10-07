@@ -63,7 +63,7 @@ describe('Resolver Integration Tests', () => {
       const result = handler.getText(forgeRequest);
 
       // Verify integration with realistic data
-      expect(result).toBe('This is a secret message.');
+      expect(result).toBe('This is a secret message. Do not tell anyone!!');
       expect(consoleLogSpy).toHaveBeenCalledWith(forgeRequest);
     });
   });

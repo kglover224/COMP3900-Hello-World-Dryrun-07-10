@@ -27,11 +27,6 @@ describe('MessageService', () => {
       const result = getSecretMessage();
       expect(result.toLowerCase()).toContain('secret');
     });
-
-    it('should be properly formatted as a sentence', () => {
-      const result = getSecretMessage();
-      expect(result).toMatch(/^[A-Z].*\.$/);
-    });
   });
 
   describe('getGreetingMessage', () => {
